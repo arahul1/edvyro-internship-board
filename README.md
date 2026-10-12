@@ -86,6 +86,6 @@ The included internship records are fictional demonstration data. External appli
 
 ## Author
 
-Your Name
+Rahul Arnipalli
 
-GitHub: YOUR_GITHUB_PROFILE_URL
+GitHub: https://github.com/arahul1/edvyro-internship-board
