@@ -5,8 +5,8 @@ A responsive internship listing interface built with semantic HTML, CSS, and van
 
 ## Live Demo
 
-- **Website:** Add your deployed website URL
-- **GitHub Repository:** Add your repository URL
+- **Website:** https://internshiphubb.netlify.app/
+- **GitHub Repository:** https://github.com/arahul1/edvyro-internship-board
 
 ## Objective
 
