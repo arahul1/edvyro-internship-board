@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover internships across technology, AI, data science, design and more.">
+  <title>InternshipHub | Discover Your Next Opportunity</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="InternshipHub home">
+        <span class="brand-icon" aria-hidden="true">I</span>
+        Internship<span>Hub</span>
+      </a>
+
+      <a class="nav-link" href="#internships">Explore internships</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">YOUR CAREER STARTS HERE</p>
+        <h1>Find an internship.<br><span>Build your future.</span></h1>
+        <p class="hero-description">
+          Discover opportunities, develop real-world skills, and take
+          the next step in your career.
+        </p>
+
+        <a class="primary-button" href="#internships">
+          Explore opportunities <span aria-hidden="true">→</span>
+        </a>
+
+        <div class="hero-note">
+          <span aria-hidden="true">✦</span>
+          Explore opportunities across multiple domains
+        </div>
+      </div>
+    </section>
+
+    <section class="internship-section container" id="internships">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OPPORTUNITIES FOR YOU</p>
+          <h2>Explore internships</h2>
+          <p class="section-description">
+            Find a role that matches your interests and skills.
+          </p>
+        </div>
+        <p class="results-count" id="results-count">Loading internships...</p>
+      </div>
+
+      <form class="filter-panel" id="filter-form" role="search">
+        <div class="field search-field">
+          <label for="search">Search internships</label>
+          <div class="input-wrapper">
+            <span aria-hidden="true">⌕</span>
+            <input
+              type="search"
+              id="search"
+              name="search"
+              placeholder="Role, company or keyword..."
+              autocomplete="off"
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="domain">Internship domain</label>
+          <select id="domain" name="domain">
+            <option value="all">All domains</option>
+            <option value="Web Development">Web Development</option>
+            <option value="AI/ML">AI / Machine Learning</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+          </select>
+        </div>
+
+        <button class="reset-button" type="reset">Clear filters</button>
+      </form>
+
+      <div
+        class="internship-grid"
+        id="internship-grid"
+        aria-label="Internship listings"
+        aria-busy="true"
+      ></div>
+
+      <div
+        class="status-message"
+        id="status-message"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></div>
+
+      <div class="error-message" id="error-message" role="alert" hidden>
+        <h3>Something went wrong</h3>
+        <p>We couldn't display the internships. Please try again.</p>
+        <button class="primary-button" id="retry-button" type="button">
+          Try again
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand footer-brand" href="#">
+        Internship<span>Hub</span>
+      </a>
+      <p>Built with HTML, CSS and JavaScript.</p>
+      <p>© <span id="current-year"></span> InternshipHub</p>
+    </div>
+  </footer>
+</body>
+</html>
